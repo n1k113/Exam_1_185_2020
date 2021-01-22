@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+class Car 
+{
+public:
+	void start() 
+	{
+		cout << "The car started" << endl; 
+	}
+	void stop()
+	{
+		cout << "The car stopped" << endl;
+	}
+	int drive(int howlong)
+	{
+		int distance = howlong * 60; 
+		cout << "Auto drove " << distance << " km" << endl; 
+		return distance; 
+	}
+};
+
+int main()
+{
+	Car a; 
+	a.start();
+	a.stop();
+	a.drive(60);
+
+}
